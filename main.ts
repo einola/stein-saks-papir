@@ -3,7 +3,7 @@ input.onGesture(Gesture.Shake, function () {
     basic.showNumber(1)
     basic.showNumber(2)
     basic.showNumber(3)
-    Rock_paper_scissors = randint(1, 3)
+    Rock_paper_scissors = randint(1, 5)
     if (Rock_paper_scissors == 1) {
         basic.showLeds(`
             . # # # .
@@ -20,13 +20,29 @@ input.onGesture(Gesture.Shake, function () {
             # # # # #
             # # # # #
             `)
-    } else {
+    } else if (Rock_paper_scissors == 3) {
         basic.showLeds(`
             # . . # #
             . # . # #
             . . # # .
             . # . # #
             # . . # #
+            `)
+    } else if (Rock_paper_scissors == 4) {
+        basic.showLeds(`
+            . # # # .
+            # . . . #
+            # . . . .
+            # . . . .
+            . # # # #
+            `)
+    } else {
+        basic.showLeds(`
+            # # . # #
+            # # . # #
+            # # . # #
+            # # # # #
+            . # # # .
             `)
     }
 })

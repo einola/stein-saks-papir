@@ -1,4 +1,70 @@
 let Rock_paper_scissors = 0
+input.onButtonPressed(Button.A, function () {
+    basic.showIcon(IconNames.Sad)
+    basic.showIcon(IconNames.Confused)
+    basic.showIcon(IconNames.Happy)
+    basic.showIcon(IconNames.Heart)
+    basic.showLeds(`
+        # # # # #
+        . . # . .
+        . . # . .
+        . . # . .
+        # # # # #
+        `)
+    basic.pause(1000)
+    basic.showLeds(`
+        . # . . .
+        . # . . .
+        . # . . .
+        . # . . .
+        . # # # .
+        `)
+    basic.showLeds(`
+        . # # # .
+        # . . . #
+        # . . . #
+        # . . . #
+        . # # # .
+        `)
+    basic.showLeds(`
+        . . . . .
+        # . . . #
+        # . . . #
+        . # . # .
+        . . # . .
+        `)
+    basic.showLeds(`
+        . # # # .
+        . # . # .
+        . # # # .
+        . # . . .
+        . # # # .
+        `)
+    basic.pause(1000)
+    basic.showLeds(`
+        # . . . #
+        . # . # .
+        . . # . .
+        . . # . .
+        . . # . .
+        `)
+    basic.showLeds(`
+        . # # # .
+        # . . . #
+        # . . . #
+        # . . . #
+        . # # # .
+        `)
+    basic.showLeds(`
+        . . . . .
+        # . . . #
+        # . . . #
+        # . . . #
+        . # # # .
+        `)
+    basic.pause(1000)
+    basic.showString("   I love you!")
+})
 input.onGesture(Gesture.Shake, function () {
     basic.showNumber(1)
     basic.showNumber(2)
@@ -45,6 +111,9 @@ input.onGesture(Gesture.Shake, function () {
             . # # # .
             `)
     }
+})
+basic.forever(function () {
+	
 })
 basic.forever(function () {
 	
